@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lockii Hero Section</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
         .font-display {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Playfair Display', serif;
         }
     </style>
 </head>
 <body class="bg-white text-black antialiased">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-[#9EE8F7] py-2.5 px-4 text-center text-[13px] font-medium text-slate-900">
+    <div class="bg-gradient-to-r from-slate-900 to-slate-800 py-3 px-4 text-center text-[13px] font-medium text-white">
         Lockii enables 24/7 rental operations with 95% booking automation
-        <span class="mx-2 text-slate-400">|</span>
-        <a href="#" class="inline-flex items-center hover:underline">
+        <span class="mx-2 text-slate-500">|</span>
+        <a href="#" class="inline-flex items-center hover:text-slate-300 transition-colors">
             Learn more 
             <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
         </a>
     </div>
 
     <!-- Navigation -->
-    <nav class="max-w-[1400px] mx-auto px-6 py-5 flex items-center justify-between">
+    <nav class="max-w-[1400px] mx-auto px-6 py-6 flex items-center justify-between">
         <!-- Logo -->
         <div class="flex items-center gap-2">
-            <div class="w-8 h-8 bg-black text-white flex items-center justify-center rounded-sm">
+            <div class="w-9 h-9 bg-gradient-to-br from-slate-900 to-slate-700 text-white flex items-center justify-center rounded-lg">
                 <!-- Abstract Logo Icon -->
                 <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                     <path d="M4 4h8v8H4V4zm12 0h4v4h-4V4zm0 8h4v8h-8v-4h4v-4zm-8 4v4H4v-8h4v4z" />
@@ -41,7 +41,7 @@
         </div>
 
         <!-- Nav Links -->
-        <div class="hidden lg:flex items-center gap-8 text-[11px] font-bold tracking-wide text-slate-600 uppercase">
+        <div class="hidden lg:flex items-center gap-8 text-[13px] font-medium tracking-wide text-slate-600">
             <div class="group relative cursor-pointer flex items-center gap-1 hover:text-black">
                 Products
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
@@ -60,34 +60,34 @@
 
         <!-- Auth Buttons -->
         <div class="flex items-center gap-3">
-            <button class="px-4 py-2 text-sm font-medium border border-gray-300 rounded hover:bg-gray-50 transition-colors">Log in</button>
-            <button class="px-4 py-2 text-sm font-medium bg-[#111] text-white rounded hover:bg-black transition-colors">Start free trial</button>
+            <button class="px-5 py-2.5 text-sm font-medium text-slate-700 hover:text-slate-900 transition-colors">Log in</button>
+            <button class="px-6 py-2.5 text-sm font-medium bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-all hover:shadow-lg">Start free trial</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <main class="pt-16 pb-0">
+    <main class="pt-20 pb-0">
         <div class="max-w-6xl mx-auto px-4 text-center">
             
             <!-- Headline -->
-            <h1 class="font-display text-[60px] md:text-[90px] leading-[0.85] font-bold uppercase tracking-tighter text-[#111] mb-8">
+            <h1 class="font-display text-[64px] md:text-[96px] leading-[0.95] font-bold tracking-tight text-slate-900 mb-8">
                 Rent 24/7.<br>
                 Automated locks.<br>
                 Total control.
             </h1>
 
             <!-- Subheadline -->
-            <p class="text-xl md:text-2xl font-bold text-[#111] tracking-tight mb-10">
+            <p class="text-lg md:text-xl font-normal text-slate-600 tracking-normal mb-12 max-w-3xl mx-auto leading-relaxed">
                 Turn any equipment into a 24/7 self-service business with digital locks, GPS tracking, and identity verification.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
-                <button class="h-12 px-6 bg-[#111] text-white rounded-md font-medium flex items-center gap-2 hover:bg-black transition-colors group">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
+                <button class="h-14 px-8 bg-slate-900 text-white rounded-lg font-medium flex items-center gap-2 hover:bg-slate-800 transition-all hover:shadow-xl group">
                     Get started
                     <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </button>
-                <button class="h-12 px-6 bg-white text-[#111] border border-gray-300 rounded-md font-medium flex items-center gap-2 hover:bg-gray-50 transition-colors">
+                <button class="h-14 px-8 bg-white text-slate-900 border-2 border-slate-200 rounded-lg font-medium flex items-center gap-2 hover:border-slate-300 hover:bg-slate-50 transition-all">
                     Watch demo
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </button>
@@ -96,21 +96,21 @@
         </div>
 
         <!-- Hero Image Container -->
-        <div class="w-full relative h-[400px] md:h-[600px] overflow-hidden">
+        <div class="w-full relative h-[450px] md:h-[650px] overflow-hidden rounded-t-3xl shadow-2xl">
             <!-- Main Background Image -->
             <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/53279021-2fba-469a-9bd9-57efc3c4a80c/hero-2-img-0-1770121906980.png" alt="Woman working" class="w-full h-full object-cover object-top">
             
             <!-- Floating UI Card Overlay -->
-            <div class="absolute bottom-16 right-4 md:right-24 lg:right-48 bg-black/60 backdrop-blur-md border border-white/10 rounded-xl p-4 flex items-center gap-4 max-w-sm shadow-2xl animate-fade-in-up">
+            <div class="absolute bottom-16 right-4 md:right-24 lg:right-48 bg-white/95 backdrop-blur-xl border border-slate-200 rounded-2xl p-5 flex items-center gap-4 max-w-sm shadow-2xl animate-fade-in-up">
                 <!-- Check Icon Box -->
-                <div class="w-10 h-10 bg-[#5F6F50] rounded flex items-center justify-center border border-white/20 shrink-0">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shrink-0 shadow-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
                 </div>
                 
                 <!-- Text Content -->
                 <div class="text-left">
-                    <div class="text-gray-300 text-xs font-medium mb-0.5">Booking verified</div>
-                    <div class="text-white text-sm font-bold leading-tight">Lock #402 activated for customer pickup</div>
+                    <div class="text-slate-500 text-xs font-medium mb-1">Booking verified</div>
+                    <div class="text-slate-900 text-sm font-semibold leading-tight">Lock #402 activated for customer pickup</div>
                 </div>
             </div>
         </div>
